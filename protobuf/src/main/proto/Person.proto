@@ -1,0 +1,13 @@
+// 声明使用的协议版本为 proto3
+syntax = "proto3";
+// 生成的Java类的包
+option java_package = "com.lding.domain";
+// 定义创建的文件名为 Person
+option java_outer_classname = "PersonModel";
+
+// 声明具体需要序列化的类
+message Person {
+  string name = 1;
+  int32 age = 2;
+  bool sex = 3;
+}
